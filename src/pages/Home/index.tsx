@@ -1,9 +1,14 @@
 import React from "react";
 
-// import { Container } from './styles';
+import CatFactList from "../../components/CatFactList";
+import { Container } from "./styles";
 
 const Home: React.FC = () => {
-  return <h1>Home</h1>;
+  return (
+    <Container>
+      <CatFactList />
+    </Container>
+  );
 };
 
 export default Home;

@@ -10,7 +10,7 @@ const DefaultLayout: React.FC = ({ children }) => {
       </Header>
       <Wrapper>{children}</Wrapper>
       <Footer>
-        <p>developed by Mateus Domingos © 2020</p>
+        <p>Developed by Mateus Domingos © 2020</p>
       </Footer>
     </>
   );
