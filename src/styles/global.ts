@@ -13,8 +13,12 @@ export default createGlobalStyle`
   html, body, #root {
     height: 100%;
   }
-  body {
-    -webkit-font-smoothing: antialiased;
+  body > div {
+    display: flex;
+    flex-direction: column;
+  }
+  main {
+    flex: 1;
   }
   body, input, button {
     font: 14px 'Roboto', sans-serif;
