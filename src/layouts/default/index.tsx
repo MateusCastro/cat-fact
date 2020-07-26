@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-import { Header, Wrapper, Footer } from "./styles";
+import { Header, Wrapper, Footer } from './styles';
 
 const DefaultLayout: React.FC = ({ children }) => {
   return (

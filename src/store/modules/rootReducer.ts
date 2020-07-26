@@ -1,6 +1,6 @@
-import { combineReducers } from "redux";
+import { combineReducers } from 'redux';
 
-import catFacts from "./catFacts";
+import catFacts from './catFacts';
 
 export default combineReducers({
   catFacts,

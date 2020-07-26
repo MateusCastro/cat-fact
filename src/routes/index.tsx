@@ -1,8 +1,8 @@
-import React from "react";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import React from 'react';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
-import Home from "../pages/Home";
-import DefaultLayout from "../layouts/default";
+import Home from '../pages/Home';
+import DefaultLayout from '../layouts/default';
 
 export default function Routes() {
   return (

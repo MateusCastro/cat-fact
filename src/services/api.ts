@@ -1,7 +1,7 @@
-import axios from "axios";
+import axios from 'axios';
 
 const api = axios.create({
-  baseURL: "https://cat-fact.herokuapp.com",
+  baseURL: 'https://cat-fact.herokuapp.com',
 });
 
 export default api;

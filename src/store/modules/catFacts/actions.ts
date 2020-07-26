@@ -1,7 +1,7 @@
-import { action } from "typesafe-actions";
+import { action } from 'typesafe-actions';
 
-import { CatFactActionsTypes } from "./types";
-import { CatFact } from "../../../common/types";
+import { CatFactActionsTypes } from './types';
+import { CatFact } from '../../../common/types';
 
 export const loadRequest = () => action(CatFactActionsTypes.LOAD_REQUEST);
 export const loadSuccess = (data: CatFact[]) =>

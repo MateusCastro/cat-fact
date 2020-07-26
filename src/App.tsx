@@ -1,10 +1,9 @@
-import React from "react";
+import React from 'react';
+import { Provider } from 'react-redux';
 
-import { Provider } from "react-redux";
-
-import store from "./store";
-import Routes from "./routes";
-import GlobalStyle from "./styles/global";
+import store from './store';
+import Routes from './routes';
+import GlobalStyle from './styles/global';
 
 function App() {
   return (

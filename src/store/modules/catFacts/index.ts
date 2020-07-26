@@ -1,5 +1,5 @@
-import { Reducer } from "redux";
-import { CatFactActionsTypes, CatFactState } from "./types";
+import { Reducer } from 'redux';
+import { CatFactActionsTypes, CatFactState } from './types';
 
 const INITIAL_STATE: CatFactState = {
   data: [],
@@ -12,15 +12,19 @@ const reducer: Reducer<CatFactState> = (state = INITIAL_STATE, action) => {
     case CatFactActionsTypes.LOAD_REQUEST:
       return { ...state, loading: true };
     case CatFactActionsTypes.LOAD_SUCCESS:
-      const catFacts = action.payload.data.all;
       return {
         ...state,
         loading: false,
         error: false,
-        data: catFacts,
+        data: action.payload.data.all,
       };
     case CatFactActionsTypes.LOAD_FAILURE:
-      return { ...state, loading: false, error: true, data: [] };
+      return {
+        ...state,
+        loading: false,
+        error: true,
+        data: [],
+      };
     default:
       return state;
   }

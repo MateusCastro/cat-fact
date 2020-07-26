@@ -1,9 +1,9 @@
-import { CatFact } from "../../../common/types";
+import { CatFact } from '../../../common/types';
 
 export enum CatFactActionsTypes {
-  LOAD_REQUEST = "@catFacts/LOAD_REQUEST",
-  LOAD_SUCCESS = "@catFacts/LOAD_SUCCESS",
-  LOAD_FAILURE = "@catFacts/LOAD_FAILURE",
+  LOAD_REQUEST = '@catFacts/LOAD_REQUEST',
+  LOAD_SUCCESS = '@catFacts/LOAD_SUCCESS',
+  LOAD_FAILURE = '@catFacts/LOAD_FAILURE',
 }
 
 export interface CatFactState {

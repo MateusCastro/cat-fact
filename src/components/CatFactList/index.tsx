@@ -1,21 +1,21 @@
-import React, { useEffect } from "react";
+import React, { useEffect } from 'react';
 
-import { ApplicationState } from "../../store";
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector, useDispatch } from 'react-redux';
+import { ApplicationState } from '../../store';
 
-import { Table, Loading } from "./styles";
+import { Table, Loading } from './styles';
 
-import { CatFact } from "../../common/types";
-import { loadRequest } from "../../store/modules/catFacts/actions";
-import CatFactItem from "../CatFactItem";
+import { CatFact } from '../../common/types';
+import { loadRequest } from '../../store/modules/catFacts/actions';
+import CatFactItem from '../CatFactItem';
 
 const CatFactList: React.FC = () => {
   const dispatch = useDispatch();
   const catFacts = useSelector<ApplicationState, CatFact[]>(
-    (state) => state.catFacts.data
+    (state) => state.catFacts.data,
   );
   const loading = useSelector<ApplicationState, boolean>(
-    (state) => state.catFacts.loading
+    (state) => state.catFacts.loading,
   );
 
   useEffect(() => {
