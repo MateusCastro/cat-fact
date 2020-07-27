@@ -27,7 +27,7 @@ const CatFactList: React.FC = () => {
       {loading ? (
         <Loading>Loading...</Loading>
       ) : (
-        <Table>
+        <Table data-testid="carFact-table">
           <thead>
             <tr>
               <th>addded by</th>

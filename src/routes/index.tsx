@@ -1,22 +1,17 @@
 import React from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { Switch } from 'react-router-dom';
 
+import Route from './route';
 import Home from '../pages/Home';
-import DefaultLayout from '../layouts/default';
+import ValidPath from '../pages/ValidPath';
+import NotFound from '../pages/NotFound';
 
 export default function Routes() {
   return (
-    <BrowserRouter>
-      <Switch>
-        <Route
-          path="/"
-          render={(_) => (
-            <DefaultLayout>
-              <Home />
-            </DefaultLayout>
-          )}
-        />
-      </Switch>
-    </BrowserRouter>
+    <Switch>
+      <Route exact path="/" Component={Home} />
+      <Route path="/valid" Component={ValidPath} />
+      <Route path="*" Component={NotFound} />
+    </Switch>
   );
 }

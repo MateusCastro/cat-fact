@@ -12,6 +12,6 @@ export interface CatFact {
   _id: string;
   type: string;
   text: string;
-  user: User;
+  user: User | null;
   upvotes: number;
 }

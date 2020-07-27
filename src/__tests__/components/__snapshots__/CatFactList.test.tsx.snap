@@ -1,0 +1,253 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CarFactList component should load the CatFact list 1`] = `
+<CatFactList>
+  <styled.table
+    data-testid="carFact-table"
+  >
+    <table
+      className="sc-AxjAm tEjqf"
+      data-testid="carFact-table"
+    >
+      <thead>
+        <tr>
+          <th>
+            addded by
+          </th>
+          <th>
+            Fact
+          </th>
+          <th>
+            Votes
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <CatFactItem
+          catFact={
+            Object {
+              "_id": "asdf23s2d1f",
+              "text": "gato loves grace",
+              "upvotes": 8,
+              "user": null,
+            }
+          }
+          key="asdf23s2d1f"
+        >
+          <tr>
+            <td>
+              Unknown
+            </td>
+            <td>
+              gato loves grace
+            </td>
+            <td>
+              8
+            </td>
+          </tr>
+        </CatFactItem>
+        <CatFactItem
+          catFact={
+            Object {
+              "_id": "96512312sf",
+              "text": "Cats sleep 70% of their lives.",
+              "upvotes": 7,
+              "user": Object {
+                "name": Object {
+                  "first": "Mateus",
+                  "last": "Domingos",
+                },
+              },
+            }
+          }
+          key="96512312sf"
+        >
+          <tr>
+            <td>
+              Mateus Domingos
+            </td>
+            <td>
+              Cats sleep 70% of their lives.
+            </td>
+            <td>
+              7
+            </td>
+          </tr>
+        </CatFactItem>
+      </tbody>
+    </table>
+  </styled.table>
+</CatFactList>
+`;
+
+exports[`CarFactList component should render CarFact list 1`] = `
+<CatFactList>
+  <styled.table
+    data-testid="carFact-table"
+  >
+    <table
+      className="sc-AxjAm tEjqf"
+      data-testid="carFact-table"
+    >
+      <thead>
+        <tr>
+          <th>
+            addded by
+          </th>
+          <th>
+            Fact
+          </th>
+          <th>
+            Votes
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <CatFactItem
+          catFact={
+            Object {
+              "_id": "asdf23s2d1f",
+              "text": "gato loves grace",
+              "upvotes": 8,
+              "user": null,
+            }
+          }
+          key="asdf23s2d1f"
+        >
+          <tr>
+            <td>
+              Unknown
+            </td>
+            <td>
+              gato loves grace
+            </td>
+            <td>
+              8
+            </td>
+          </tr>
+        </CatFactItem>
+        <CatFactItem
+          catFact={
+            Object {
+              "_id": "96512312sf",
+              "text": "Cats sleep 70% of their lives.",
+              "upvotes": 7,
+              "user": Object {
+                "name": Object {
+                  "first": "Mateus",
+                  "last": "Domingos",
+                },
+              },
+            }
+          }
+          key="96512312sf"
+        >
+          <tr>
+            <td>
+              Mateus Domingos
+            </td>
+            <td>
+              Cats sleep 70% of their lives.
+            </td>
+            <td>
+              7
+            </td>
+          </tr>
+        </CatFactItem>
+      </tbody>
+    </table>
+  </styled.table>
+</CatFactList>
+`;
+
+exports[`CarFactList component should render loading 1`] = `
+<CatFactList>
+  <styled.table
+    data-testid="carFact-table"
+  >
+    <table
+      className="sc-AxjAm tEjqf"
+      data-testid="carFact-table"
+    >
+      <thead>
+        <tr>
+          <th>
+            addded by
+          </th>
+          <th>
+            Fact
+          </th>
+          <th>
+            Votes
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <CatFactItem
+          catFact={
+            Object {
+              "_id": "asdf23s2d1f",
+              "text": "gato loves grace",
+              "upvotes": 8,
+              "user": null,
+            }
+          }
+          key="asdf23s2d1f"
+        >
+          <tr>
+            <td>
+              Unknown
+            </td>
+            <td>
+              gato loves grace
+            </td>
+            <td>
+              8
+            </td>
+          </tr>
+        </CatFactItem>
+        <CatFactItem
+          catFact={
+            Object {
+              "_id": "96512312sf",
+              "text": "Cats sleep 70% of their lives.",
+              "upvotes": 7,
+              "user": Object {
+                "name": Object {
+                  "first": "Mateus",
+                  "last": "Domingos",
+                },
+              },
+            }
+          }
+          key="96512312sf"
+        >
+          <tr>
+            <td>
+              Mateus Domingos
+            </td>
+            <td>
+              Cats sleep 70% of their lives.
+            </td>
+            <td>
+              7
+            </td>
+          </tr>
+        </CatFactItem>
+      </tbody>
+    </table>
+  </styled.table>
+</CatFactList>
+`;
+
+exports[`CarFactList component should render loading 2`] = `
+<CatFactList>
+  <styled.h2>
+    <h2
+      className="sc-AxirZ cqPXHd"
+    >
+      Loading...
+    </h2>
+  </styled.h2>
+</CatFactList>
+`;

@@ -1,9 +1,9 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import App from '../App';
+import Home from '../../pages/Home';
 
-describe('App component', () => {
+describe('page Home', () => {
   it('init', () => {
-    shallow(<App />);
+    shallow(<Home />);
   });
 });

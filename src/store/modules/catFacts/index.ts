@@ -1,7 +1,7 @@
 import { Reducer } from 'redux';
 import { CatFactActionsTypes, CatFactState } from './types';
 
-const INITIAL_STATE: CatFactState = {
+export const INITIAL_STATE: CatFactState = {
   data: [],
   error: false,
   loading: false,
@@ -16,7 +16,7 @@ const reducer: Reducer<CatFactState> = (state = INITIAL_STATE, action) => {
         ...state,
         loading: false,
         error: false,
-        data: action.payload.data.all,
+        data: action.payload.data,
       };
     case CatFactActionsTypes.LOAD_FAILURE:
       return {

@@ -7,7 +7,7 @@ export function* load() {
   try {
     const response = yield call(api.get, 'facts');
 
-    yield put(loadSuccess(response.data));
+    yield put(loadSuccess(response.data.all));
   } catch (err) {
     yield put(loadFailure());
   }
